@@ -540,6 +540,17 @@ export default {
     this.loadGame(sd)
     //生成随机副本
     this.createdDungeons()
+
+    this.$flashBox({
+      color: "gold",
+      content: "<h3>Hello</h3>",
+      onMouseEnter() {
+        console.debug("FlashBox:onMouseEnter")
+      },
+      onMouseLeave() {
+        console.debug("FlashBox:onMouseLeave")
+      }
+    })
   },
   computed: {
     attribute() { return this.$store.state.playerAttribute.attribute },

@@ -27,4 +27,7 @@ Vue.prototype.$deepCopy = function(data){
   return JSON.parse(JSON.stringify(data))
 }
 
+import FlashBox from "@/views/uiComponent/flashBox/vue-plugin";
+Vue.use(FlashBox)
+
 export default vue;
